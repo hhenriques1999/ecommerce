@@ -10,7 +10,22 @@ const Header = () => {
 					<h1>Livraria</h1>
 				</div>
 
+				<div className="search">
+					<input
+						id="search-input"
+						className="header-input"
+						type="text"
+						name="input"
+						placeholder="Buscar..."
+					/>
+					<label htmlFor="search-input">
+						<i className="fa fa-search" aria-hidden="true"></i>
+					</label>
+				</div>
+
 				<div className="ds-flex nav-search-section gap-4">
+
+
 					<div className="ds-flex gap-4 navigation flex-row">
 						<Link to="/login">
 							<div className="icon-text">
@@ -26,21 +41,8 @@ const Header = () => {
 								<span>Carrinho</span>
 							</div>
 						</Link>
-
 					</div>
 
-					<div className="search">
-						<input
-							id="search-input"
-							className="header-input"
-							type="text"
-							name="input"
-							placeholder="Buscar..."
-						/>
-						<label htmlFor="search-input">
-							<i className="fa fa-search" aria-hidden="true"></i>
-						</label>
-					</div>
 					<Link to="/sobre-nos">
 						<Button variant="danger text-black">Sobre Nós</Button>
 					</Link>
