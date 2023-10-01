@@ -1,0 +1,40 @@
+.login-container {
+	margin: 75px 30%;
+	padding: 20px;
+	background-color: rgb(237, 235, 235);
+	border-radius: 20px;
+}
+
+.login-form {
+	display: flex;
+	flex-direction: column;
+}
+
+.form-group {
+	margin-bottom: 15px;
+}
+
+.form-group label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.form-group input {
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+}
+
+button {
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	background-color: chocolate;
+	color: white;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: darkchocolate;
+}
