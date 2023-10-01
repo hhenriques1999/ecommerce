@@ -1,19 +1,25 @@
 const SecondaryHeader = () => {
 	return (
 		<div class="secondary-header">
-			<button style={{ backgroundColor: "transparent", border: 0, padding: 0 }} class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"></button>
-			<ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-				<li><a class="dropdown-item" href="#">Ação</a></li>
-				<li><a class="dropdown-item" href="#">Aventura</a></li>
-				<li><a class="dropdown-item" href="#">Arquitetura</a></li>
-				<li><a class="dropdown-item" href="#">Direito</a></li>
-				<li><a class="dropdown-item" href="#">Economia</a></li>
-				<li><a class="dropdown-item" href="#">Pedagogia</a></li>
-				<li><a class="dropdown-item" href="#"><strong>Ver todos</strong></a></li>
-			</ul>
+
+			<div className="dropdown">
+				<button style={{ backgroundColor: "transparent", border: 0, padding: 0 }} class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+					Livros por Gênero
+				</button>
+				<ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+					<li><a class="dropdown-item" href="#">Ação</a></li>
+					<li><a class="dropdown-item" href="#">Aventura</a></li>
+					<li><a class="dropdown-item" href="#">Arquitetura</a></li>
+					<li><a class="dropdown-item" href="#">Direito</a></li>
+					<li><a class="dropdown-item" href="#">Economia</a></li>
+					<li><a class="dropdown-item" href="#">Pedagogia</a></li>
+					<li><a class="dropdown-item" href="#"><strong>Ver todos</strong></a></li>
+				</ul>
+			</div>
 
 			<p>Mais Vendidos</p>
 			<p>Livros Recomendados</p>
+
 			<div className="dropdown">
 				<button style={{ backgroundColor: "transparent", border: 0, padding: 0 }} class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
 					Livros por Idioma
@@ -28,6 +34,7 @@ const SecondaryHeader = () => {
 					<li><a class="dropdown-item" href="#"><strong>Ver todos</strong></a></li>
 				</ul>
 			</div>
+
 		</div>
 	)
 }

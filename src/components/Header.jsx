@@ -1,6 +1,6 @@
+import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./Header.css";
-import { Button } from "react-bootstrap";
 
 const Header = () => {
 	return (
@@ -9,30 +9,41 @@ const Header = () => {
 				<div className="ds-flex">
 					<h1>Livraria</h1>
 				</div>
-				<div st className="ds-flex">
-					<Link to="/sobre-nos"><Button>Sobre Nós</Button></Link>
-					<div>
-						<label for="search-input">
-							<i className="fa fa-search" aria-hidden="true"></i>
-						</label>
+
+				<div className="ds-flex nav-search-section gap-4">
+					<div className="ds-flex gap-4 navigation flex-row">
+						<Link to="/login">
+							<div className="icon-text">
+								<i className="fa fa-user-circle-o" aria-hidden="true"></i>
+								<br />
+								<span>Entrar</span>
+							</div>
+						</Link>
+						<Link to="/cart">
+							<div className="icon-text">
+								<i className="fa fa-shopping-cart" aria-hidden="true"></i>
+								<br />
+								<span>Carrinho</span>
+							</div>
+						</Link>
+
+					</div>
+
+					<div className="search">
 						<input
 							id="search-input"
-							class="header-input"
+							className="header-input"
 							type="text"
 							name="input"
-							placeholder=""
+							placeholder="Buscar..."
 						/>
+						<label htmlFor="search-input">
+							<i className="fa fa-search" aria-hidden="true"></i>
+						</label>
 					</div>
-					<a href="">
-						<i style={{ padding: 10 }} class="fa fa-user-circle-o" aria-hidden="true"></i>
-						<br />
-						Entrar
-					</a>
-					<a href="">
-						<i style={{ padding: 10 }} class="fa fa-shopping-cart" aria-hidden="true"></i>
-						<br />
-						Carrinho
-					</a>
+					<Link to="/sobre-nos">
+						<Button variant="danger text-black">Sobre Nós</Button>
+					</Link>
 				</div>
 			</div>
 		</div>

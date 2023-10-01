@@ -39,3 +39,13 @@ body {
 	font-size: 30px;
 	margin: 5px;
 }
+
+.icon-text {
+    text-align: center;
+}
+
+.icon-text span {
+    display: block;
+}
+
+
