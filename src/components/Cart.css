@@ -1,0 +1,83 @@
+.cart-container {
+    margin: auto 30%;
+    padding: 20px;
+    background-color: rgba(237, 235, 235, 0.8);
+    border-radius: 20px;
+}
+
+.cart-items {
+	margin-bottom: 20px;
+}
+
+.item-image img {
+    width: 100px; 
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.cart-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 10px;
+	padding: 10px;
+	background-color: white;
+	border-radius: 10px;
+}
+
+.item-info {
+	display: flex;
+	flex-direction: column;
+}
+
+.item-name {
+	font-weight: bold;
+}
+
+.item-price, .item-quantity {
+	color: gray;
+}
+
+.remove-button {
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	background-color: chocolate;
+	color: white;
+	cursor: pointer;
+}
+
+.remove-button:hover {
+	background-color: darkchocolate;
+}
+
+.cart-total {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+.cart-bg {
+    background-image: url('../imagens/books3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding-top: 75px;
+}
+
+.checkout-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: chocolate;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 20px;  /* Optional: for some spacing above the button */
+    display: block;  /* To make the button span the full width of its container */
+}
+
+.checkout-button:hover {
+    background-color: darkchocolate;
+}

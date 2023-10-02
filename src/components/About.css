@@ -1,0 +1,25 @@
+.about-container {
+    margin: auto 30%;
+    padding: 20px;
+    background-color: rgba(237, 235, 235, 0.8); /* Optional: Adding a slight background to make text more readable */
+    border-radius: 20px;
+}
+
+.about-container h2,
+.about-container h3 {
+	color: chocolate;
+}
+
+.about-container p {
+	margin-bottom: 20px;
+	line-height: 1.5;
+}
+
+.about-bg {
+    background-image: url('../imagens/books3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding-top: 75px; /* Optional: to provide some space from the top */
+}

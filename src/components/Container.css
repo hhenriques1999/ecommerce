@@ -12,14 +12,3 @@ div {
 	justify-content: space-around;
 
 }
-
-.book-container {
-	border-radius: 10px;
-	background-color: white;
-}
-
-.book-container img {
-	border-radius: 10px;
-	height: 235px;
-	width: 100%;
-}
